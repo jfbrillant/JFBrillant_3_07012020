@@ -1,0 +1,22 @@
+{
+  "name": "jfbrillant_3_07012020",
+  "version": "1.0.0",
+  "description": "ohmyfood",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d./public/css/prefixed/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jfbrillant/JFBrillant_3_07012020.git"
+  },
+  "author": "jfbrillant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jfbrillant/JFBrillant_3_07012020/issues"
+  },
+  "homepage": "https://github.com/jfbrillant/JFBrillant_3_07012020#readme",
+  "browserslist": "last 4 versions"
+}

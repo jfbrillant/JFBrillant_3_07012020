@@ -1,0 +1,12 @@
+footer{
+    background-color: darken($color: $colour-white, $amount: 75%);
+    margin: 0;
+    padding: 20px;
+    & h4, p{
+        color: $colour-white;
+        font-weight: bold;
+    }
+    & i{
+        margin-right: 10px;
+    }
+}

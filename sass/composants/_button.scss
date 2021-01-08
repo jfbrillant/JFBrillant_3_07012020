@@ -1,0 +1,12 @@
+.button{
+    background-color: $colour-secondary;
+    border-radius: 40px;
+    margin: 20px 0 20px 0;
+    box-shadow: 1px 1px 10px grey;
+    & p{
+        color: $colour-white;
+        font-weight: bold;
+        margin: 0;
+        padding: 18px;
+    }
+}

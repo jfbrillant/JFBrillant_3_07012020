@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css" />
     <script src="https://kit.fontawesome.com/73e8c3c043.js" crossorigin="anonymous"></script>
     <title>Ohmyfood</title>
 </head>
@@ -18,26 +19,35 @@
         </section>
         <section class="about">
             <h1>Réservez le menu qui vous convient</h1>
-            <p>Découvrez des restaurents d'exception, séléctionnés pas nos soins.</p>
-            <div>
-                <input type="button" name="explore" class="button" value="Explorer nos restaurants">
+            <p>Découvrez des restaurants d'exception, séléctionnés pas nos soins.</p>
+            <div class="button">
+                <a href="#anchor-restaurants"><p>Explorez nos restaurants</p></a>
             </div>
         </section>
         <section class="fonctionnement">
             <h2>Fonctionnement</h2>
-            <div class="bloc-fonctionnement">
-                <div class="bloc-fonctionnement-content">
-                    <p>1</p><h3><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</h3>
+            <div class="fonctionnement-bloc">
+                <div class="fonctionnement-bloc-content">
+                    <div class="number">
+                        <p>1</p>
+                    </div>
+                    <h3><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</h3>
                 </div>
-                <div>
-                    <p>2</p><h3><i class="fas fa-list-ul"></i>Composez votre menu</h3>
+                <div class="fonctionnement-bloc-content">
+                    <div class="number">
+                        <p>2</p>
+                    </div>
+                    <h3><i class="fas fa-list-ul"></i>Composez votre menu</h3>
                 </div>
-                <div>
-                    <p>3</p><h3><i class="fas fa-store"></i>Dégustez au restaurant</h3>
+                <div class="fonctionnement-bloc-content">
+                    <div class="number">
+                        <p>3</p>
+                    </div>
+                    <h3><i class="fas fa-store"></i>Dégustez au restaurant</h3>
                 </div>
             </div>
         </section>
-        <section class="restaurants">
+        <section id="anchor-restaurants" class="restaurants">
             <h2>Restaurants</h2>
             <div class="restaurants-bloc">
                 <div class="restaurants-bloc-content">
@@ -92,7 +102,7 @@
         </section>
     </main>
     <footer>
-        <h2>ohmyfood</h2>
+        <h4>ohmyfood</h4>
         <p><i class="fas fa-utensils"></i>Proposer unn restaurant</p>
         <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
         <p>Mentions légales</p>

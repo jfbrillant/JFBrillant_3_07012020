@@ -1,0 +1,36 @@
+.fonctionnement{
+    padding: 30px 0 30px 0;
+    margin: 0 20px 0 20px;
+    &-bloc{
+        display: flex;
+        flex-direction: column;
+        &-content{
+            display: flex;
+            align-items: center;
+            & .number{
+                position: relative;
+                margin: 0 -15px 0 0;
+                padding: 8px;
+                height: 18px;
+                width: 18px;
+                border-radius: 100%;
+                color: white;
+                background-color: $colour-primary;
+                font-weight: bold;
+            }
+            & p{
+                margin: 0 0 0 2px;
+            }
+            & h3{
+                width: 100%;
+                padding: 30px;
+                box-shadow: 1px 1px 10px grey;
+                border-radius: 20px;
+                & i{
+                    margin-right: 20px;
+                    color: grey;
+                }
+            }
+        }
+    } 
+}

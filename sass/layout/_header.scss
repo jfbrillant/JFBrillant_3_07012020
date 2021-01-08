@@ -2,7 +2,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: baseline;
-    z-index: 1;
+    position: relative;
     padding: 30px 0 10px 0;
-    box-shadow: 1px 1px 10px black;
+    box-shadow: 1px 1px 10px grey;
 }

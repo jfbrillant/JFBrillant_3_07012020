@@ -32,6 +32,10 @@ a {
   font-weight: bold;
 }
 
+i {
+  font-weight: normal;
+}
+
 .button {
   background-color: #FF79DA;
   border-radius: 40px;
@@ -42,7 +46,19 @@ a {
   color: #fff;
   font-weight: bold;
   margin: 0;
-  padding: 18px;
+  padding: 17px;
+}
+.button__menu {
+  width: min-content;
+  padding: 0 35px 0 35px;
+  align-self: center;
+}
+
+.underline {
+  height: 4px;
+  width: 48px;
+  background-color: #99E2D0;
+  margin: 5px 0 0 10px;
 }
 
 header {
@@ -51,7 +67,7 @@ header {
   align-items: baseline;
   position: relative;
   padding: 30px 0 10px 0;
-  box-shadow: 1px 1px 10px grey;
+  box-shadow: 0 4px 10px #bfbfbf;
 }
 header .arrow-left {
   margin-left: 30px;
@@ -65,7 +81,7 @@ header #logo {
 footer {
   background-color: #404040;
   margin: 0;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
 }
 footer h4, footer p {
   color: #fff;
@@ -84,6 +100,59 @@ footer i {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: #e6e6e6;
+  border-radius: 40px 40px 0 0;
+  margin-top: -50px;
+  padding: 30px 15px 80px 15px;
+}
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.menu h4, .menu i {
+  font-size: 27px;
+  margin: 0 0 0 10px;
+  font-weight: normal;
+}
+.menu i {
+  padding-right: 15px;
+}
+.menu-group {
+  margin: 15px 0 15px 0;
+}
+.menu-group-dish {
+  border-radius: 20px;
+  box-shadow: 0 4px 10px #cccccc;
+  background-color: #f2f2f2;
+  padding: 12px;
+  margin: 20px 0 20px 0;
+}
+.menu-group-dish div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 15px;
+}
+.menu-group h2 {
+  font-size: 19px;
+  font-weight: normal;
+  margin: 0 0 0 10px;
+}
+.menu-group h3 {
+  font-size: 18px;
+  margin: 0 0 10px 0;
+}
+.menu-group p {
+  font-size: 15px;
+  margin: 0;
 }
 
 .location {
@@ -148,7 +217,7 @@ footer i {
 .fonctionnement-bloc-content h3 {
   width: 100%;
   padding: 30px;
-  box-shadow: 1px 1px 10px grey;
+  box-shadow: 0 4px 10px #cccccc;
   border-radius: 20px;
 }
 .fonctionnement-bloc-content h3 i {
@@ -169,7 +238,7 @@ footer i {
 .restaurants-bloc-content {
   overflow: hidden;
   border-radius: 20px;
-  box-shadow: 1px 1px 10px grey;
+  box-shadow: 0 4px 10px #cccccc;
   margin: 20px 0 20px 0;
 }
 .restaurants-bloc-content-img {

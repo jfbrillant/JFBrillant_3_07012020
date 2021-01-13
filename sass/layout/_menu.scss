@@ -1,0 +1,53 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: darken($color: $colour-white, $amount: 10%);
+    border-radius: 40px 40px 0 0;
+    margin-top: -50px;
+    padding: 30px 15px 80px 15px;
+    &-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    & h4, i{
+        font-size: 27px;
+        margin: 0 0 0 10px;
+        font-weight: normal;
+    }
+    & i{
+        padding-right: 15px;
+    }
+    &-group{
+        margin: 15px 0 15px 0;
+        &-dish{
+            border-radius: 20px;
+            box-shadow: 0 4px 10px darken($color: $colour-white, $amount: 20%);
+            background-color: darken($color: $colour-white, $amount: 5%);
+            padding: 12px;
+            margin: 20px 0 20px 0;
+            & div{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-right: 15px;
+            }
+        }
+        & h2{
+            font-size: 19px;
+            font-weight: normal;
+            margin: 0 0 0 10px;
+        }
+        & h3{
+            font-size: 18px;
+            margin: 0 0 10px 0;
+        }
+        & p{
+            font-size: 15px;
+            margin: 0;
+        }
+    }
+}
+

@@ -2,9 +2,15 @@ footer{
     background-color: darken($color: $colour-white, $amount: 75%);
     margin: 0;
     padding: 10px 20px 20px 20px;
-    & h4, p{
+    & h4{
+        color: $colour-white;
+        font-weight: normal;
+        margin: 13px 0 20px 0;
+    }
+    & p{
         color: $colour-white;
         font-weight: bold;
+        margin: 10px 0 10px 0;
     }
     & i{
         width: 20px;

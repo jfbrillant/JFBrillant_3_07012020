@@ -3,7 +3,7 @@
 body, header, main, footer {
   margin: 0;
   margin: auto;
-  max-width: 1200px;
+  max-width: 1024px;
 }
 
 h4 {
@@ -37,10 +37,10 @@ i {
 }
 
 .button {
-  background-color: #FF79DA;
+  background-image: linear-gradient(#FF79DA, #9356DC);
   border-radius: 40px;
   margin: 20px 0 20px 0;
-  box-shadow: 1px 1px 10px grey;
+  box-shadow: 0 4px 10px #cccccc;
 }
 .button p {
   color: #fff;
@@ -83,9 +83,15 @@ footer {
   margin: 0;
   padding: 10px 20px 20px 20px;
 }
-footer h4, footer p {
+footer h4 {
+  color: #fff;
+  font-weight: normal;
+  margin: 13px 0 20px 0;
+}
+footer p {
   color: #fff;
   font-weight: bold;
+  margin: 10px 0 10px 0;
 }
 footer i {
   width: 20px;
@@ -221,8 +227,16 @@ footer i {
   border-radius: 20px;
 }
 .fonctionnement-bloc-content h3 i {
-  margin-right: 20px;
+  font-size: 18px;
+  margin-right: 25px;
+  margin-left: 5px;
   color: grey;
+}
+.fonctionnement-bloc-content__highlight h3 {
+  background-color: #f2eafb;
+}
+.fonctionnement-bloc-content__highlight h3 i {
+  color: #9356DC;
 }
 
 .restaurants {
@@ -236,10 +250,25 @@ footer i {
   margin: 0 20px 0 20px;
 }
 .restaurants-bloc-content {
+  position: relative;
   overflow: hidden;
   border-radius: 20px;
   box-shadow: 0 4px 10px #cccccc;
   margin: 20px 0 20px 0;
+}
+.restaurants-bloc-content-new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.restaurants-bloc-content-new p {
+  background-color: #99E2D0;
+  color: #278870;
+  margin: 0;
+  padding: 8px 12px 8px 12px;
+  font-weight: bold;
+  border-radius: 5%;
+  box-shadow: 0 2px 8px #4d4d4d;
 }
 .restaurants-bloc-content-img {
   overflow: hidden;

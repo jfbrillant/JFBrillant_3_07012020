@@ -7,10 +7,25 @@
     &-bloc{
         margin: 0 20px 0 20px;
         &-content{
+            position: relative;
             overflow: hidden;
             border-radius: 20px;
             box-shadow: 0 4px 10px darken($color: $colour-white, $amount: 20%);
             margin: 20px 0 20px 0;
+            &-new{
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                & p{
+                    background-color: $colour-tertiary;
+                    color: darken($color: $colour-tertiary, $amount: 40%);
+                    margin: 0;
+                    padding: 8px 12px 8px 12px;
+                    font-weight: bold;
+                    border-radius: 5%;
+                    box-shadow: 0 2px 8px darken($color: $colour-white, $amount: 70%);
+                }
+            }
             &-img{
                 overflow: hidden;
                 height: 75%;

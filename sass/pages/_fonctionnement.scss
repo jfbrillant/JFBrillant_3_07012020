@@ -27,8 +27,18 @@
                 box-shadow: 0 4px 10px darken($color: $colour-white, $amount: 20%);
                 border-radius: 20px;
                 & i{
-                    margin-right: 20px;
+                    font-size: 18px;
+                    margin-right: 25px;
+                    margin-left: 5px;
                     color: grey;
+                }
+            }
+            &__highlight{
+                & h3{
+                    background-color: lighten($color: $colour-primary, $amount: 35%);
+                    & i{
+                        color: $colour-primary;
+                    }
                 }
             }
         }

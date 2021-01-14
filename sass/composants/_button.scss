@@ -1,8 +1,11 @@
-.button{
-    background-image: linear-gradient($colour-secondary, $colour-primary);
+.btn{
+    border: none;
+    background: $colour-btn;
     border-radius: 40px;
     margin: 20px 0 20px 0;
     box-shadow: 0 4px 10px darken($color: $colour-white, $amount: 20%);
+    position: relative;
+    z-index: 1;
     & p{
         color: $colour-white;
         font-weight: bold;
@@ -11,7 +14,26 @@
     }
     &__menu{
         width: min-content;
-        padding: 0 35px 0 35px;
         align-self: center;
+        padding: 0 35px 0 35px;
+    }
+    &:hover{
+        &::after{
+            opacity: 1;
+        }
+    }
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background: linear-gradient(lighten($colour-secondary, 5%), lighten($colour-primary, 5%));
+        box-shadow: 0 4px 15px darken($color: $colour-white, $amount: 50%);
+        opacity: 0;
+        border-radius: 40px;
+        transition: opacity 250ms;
     }
 }

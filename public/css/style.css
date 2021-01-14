@@ -36,22 +36,42 @@ i {
   font-weight: normal;
 }
 
-.button {
-  background-image: linear-gradient(#FF79DA, #9356DC);
+.btn {
+  border: none;
+  background: linear-gradient(#FF79DA, #9356DC);
   border-radius: 40px;
   margin: 20px 0 20px 0;
   box-shadow: 0 4px 10px #cccccc;
+  position: relative;
+  z-index: 1;
 }
-.button p {
+.btn p {
   color: #fff;
   font-weight: bold;
   margin: 0;
   padding: 17px;
 }
-.button__menu {
+.btn__menu {
   width: min-content;
-  padding: 0 35px 0 35px;
   align-self: center;
+  padding: 0 35px 0 35px;
+}
+.btn:hover::after {
+  opacity: 1;
+}
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  background: linear-gradient(#ff93e1, #a16be0);
+  box-shadow: 0 4px 15px gray;
+  opacity: 0;
+  border-radius: 40px;
+  transition: opacity 250ms;
 }
 
 .underline {

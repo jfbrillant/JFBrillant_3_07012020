@@ -233,11 +233,11 @@ footer i {
   margin: 20px 0 20px 0;
   animation: dish 800ms both;
 }
-.menu-group-dish:hover .checkbox {
+.menu-group-dish:hover .checkbox, .menu-group-dish :active .checkbox {
   transform: translateX(0%);
   width: 30%;
 }
-.menu-group-dish:hover .checkbox .fa-check-circle {
+.menu-group-dish:hover .checkbox .fa-check-circle, .menu-group-dish :active .checkbox .fa-check-circle {
   transform: rotate(360deg);
 }
 .menu-group-dish-content {
@@ -257,6 +257,9 @@ footer i {
 }
 .menu-group-dish--3 {
   animation-delay: 700ms;
+}
+.menu-group-dish--4 {
+  animation-delay: 900ms;
 }
 .menu-group h2 {
   font-size: 19px;

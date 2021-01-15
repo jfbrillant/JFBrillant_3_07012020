@@ -33,7 +33,7 @@
             background-color: darken($color: $colour-white, $amount: 5%);
             margin: 20px 0 20px 0;
             animation: dish 800ms both;
-            &:hover .checkbox{
+            &:hover .checkbox, :active .checkbox{
                 transform: translateX(0%);
                 width: 30%;
                 .fa-check-circle{
@@ -57,6 +57,9 @@
             }
             &--3 {
                 animation-delay: 700ms;
+            }
+            &--4 {
+                animation-delay: 900ms;
             }
         }
         & h2{

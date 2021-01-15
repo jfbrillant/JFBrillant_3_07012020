@@ -1,0 +1,17 @@
+.checkbox{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    cursor: pointer;
+    background-color: $colour-tertiary;
+    color: $colour-white;
+    font-size: 30px;
+    width: 10%;
+    height: 80px;
+    transform: translateX(100%);
+    transition: transform 400ms ease-in-out;
+}
+
+.fa-check-circle{
+    transition: transform 400ms ease-in-out;
+}

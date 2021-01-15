@@ -6,34 +6,57 @@
     border-radius: 40px 40px 0 0;
     margin-top: -50px;
     padding: 30px 15px 80px 15px;
+    animation: menu 3000ms cubic-bezier(.1,.9,.1,1) both;
     &-title{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 15px;
     }
-    & h4, i{
+    & h4, .heart{
         font-size: 27px;
         margin: 0 0 0 10px;
         font-weight: normal;
     }
-    & i{
+    & .heart{
         padding-right: 15px;
         font-weight: bold;
     }
     &-group{
         margin: 15px 0 15px 0;
         &-dish{
+            display: flex;
+            align-items: center;
+            overflow: hidden;
             border-radius: 20px;
             box-shadow: 0 4px 10px darken($color: $colour-white, $amount: 20%);
             background-color: darken($color: $colour-white, $amount: 5%);
-            padding: 12px;
             margin: 20px 0 20px 0;
-            & div{
+            animation: dish 800ms both;
+            &:hover .checkbox{
+                transform: translateX(0%);
+                width: 30%;
+                .fa-check-circle{
+                    transform: rotate(360deg)
+                }
+            }
+            &-content{
+                padding: 12px;
+                width: 100%;
+            }
+            &-bot{
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding-right: 15px;
+            }
+            &--1 {
+                animation-delay: 300ms;
+            }
+            &--2 {
+                animation-delay: 500ms;
+            }
+            &--3 {
+                animation-delay: 700ms;
             }
         }
         & h2{
@@ -48,7 +71,8 @@
         & p{
             font-size: 15px;
             margin: 0;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 }
-

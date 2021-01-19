@@ -124,7 +124,7 @@ i {
   opacity: 0;
   transform: scale(0.3);
 }
-.heart__full:hover {
+.heart__full:hover, .heart__full:active {
   transform: scale(1.1);
   opacity: 1;
   transition: all 300ms;
@@ -138,7 +138,7 @@ i {
   background-color: #99E2D0;
   color: #fff;
   font-size: 30px;
-  width: 10%;
+  width: 30%;
   height: 80px;
   transform: translateX(100%);
   transition: transform 400ms ease-in-out;
@@ -225,6 +225,7 @@ footer i {
 }
 .menu-group-dish {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   overflow: hidden;
   border-radius: 20px;
@@ -233,12 +234,17 @@ footer i {
   margin: 20px 0 20px 0;
   animation: dish 800ms both;
 }
-.menu-group-dish:hover .checkbox, .menu-group-dish :active .checkbox {
+.menu-group-dish:hover .checkbox, .menu-group-dish:active .checkbox {
   transform: translateX(0%);
-  width: 30%;
 }
-.menu-group-dish:hover .checkbox .fa-check-circle, .menu-group-dish :active .checkbox .fa-check-circle {
+.menu-group-dish:hover .checkbox .fa-check-circle, .menu-group-dish:active .checkbox .fa-check-circle {
   transform: rotate(360deg);
+}
+.menu-group-dish:hover .menu-group-dish-content {
+  width: 60%;
+}
+.menu-group-dish:hover .menu-group-dish-content p:nth-child(2) {
+  margin-right: 0;
 }
 .menu-group-dish-content {
   padding: 12px;
@@ -269,12 +275,21 @@ footer i {
 .menu-group h3 {
   font-size: 18px;
   margin: 0 0 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-group p {
   font-size: 15px;
   margin: 0;
+}
+.menu-group p:nth-child(1) {
+  overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+.menu-group p:nth-child(2) {
+  margin-right: -60px;
 }
 
 .location {

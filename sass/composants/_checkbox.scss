@@ -6,8 +6,9 @@
     background-color: $colour-tertiary;
     color: $colour-white;
     font-size: 30px;
-    width: 10%;
+    width: 30%;
     height: 80px;
+    //margin-right: -60px;
     transform: translateX(100%);
     transition: transform 400ms ease-in-out;
 }

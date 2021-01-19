@@ -1,18 +1,24 @@
+.checkbox-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40%;
+    transform: translateX(40%);
+    transition: transform 400ms ease-in-out;
+}
+
 .checkbox{
     display: flex;
     justify-content: center;
     align-items:center;
-    cursor: pointer;
     background-color: $colour-tertiary;
     color: $colour-white;
     font-size: 30px;
-    width: 30%;
-    height: 80px;
-    //margin-right: -60px;
-    transform: translateX(100%);
-    transition: transform 400ms ease-in-out;
+    width: 100%;
+    height: 72px;
 }
 
 .fa-check-circle{
     transition: transform 400ms ease-in-out;
+    font-size: 22px;
 }

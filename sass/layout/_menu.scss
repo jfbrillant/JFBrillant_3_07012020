@@ -29,27 +29,24 @@
             justify-content: space-between;
             align-items: center;
             overflow: hidden;
+            cursor: pointer;
             border-radius: 20px;
             box-shadow: 0 4px 10px darken($color: $colour-white, $amount: 20%);
             background-color: darken($color: $colour-white, $amount: 5%);
             margin: 20px 0 20px 0;
             animation: dish 800ms both;
-            &:hover .checkbox, &:active .checkbox{
+            &:hover .checkbox-container{
                 transform: translateX(0%);
-                //width: 80px;
                 .fa-check-circle{
                     transform: rotate(360deg)
                 }
             }
             &:hover .menu-group-dish-content{
-                width: 60%;
-                & p:nth-child(2){
-                    margin-right: 0;
-                }
+                width: 200px;
             }
             &-content{
                 padding: 12px;
-                width: 100%;
+                width: 500px;
             }
             &-bot{
                 display: flex;
@@ -75,8 +72,8 @@
             margin: 0 0 0 10px;
         }
         & h3{
-            font-size: 18px;
-            margin: 0 0 10px 0;
+            font-size: 19px;
+            margin: 0 0 6px 0;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
@@ -84,13 +81,17 @@
         & p{
             font-size: 15px;
             margin: 0;
-            &:nth-child(1){
+        }
+        & .menu-group-dish-content{
+            & p{
                 overflow: hidden;
                 text-overflow: ellipsis;
                 white-space: nowrap;
             }
-            &:nth-child(2){
-                margin-right: -60px;
+        }
+        & .checkbox-container{
+            & p{
+                margin: 0 20px 10px 0;
             }
         }
     }

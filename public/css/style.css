@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loading-title {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes content-transition {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
 @keyframes menu {
   0% {
     transform: translateY(-5%);
@@ -56,6 +83,62 @@ a {
 
 i {
   font-weight: normal;
+}
+
+.loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e6e6e6;
+  box-shadow: 0 4px 10px #cccccc;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 5;
+  animation: content-transition 1s 3s both;
+}
+.loader .spinner-bloc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 150px;
+  width: 150px;
+}
+.loader .spinner-bloc .spinner {
+  border: 10px solid #e6e6e6;
+  border-radius: 50%;
+  margin: 0;
+  position: absolute;
+}
+.loader .spinner-bloc .spinner--1 {
+  border-top: 10px solid #9356DC;
+  height: 100%;
+  width: 100%;
+  animation: spinner 1s 100ms infinite;
+}
+.loader .spinner-bloc .spinner--2 {
+  border-top: 10px solid #FF79DA;
+  height: 66%;
+  width: 66%;
+  animation: spinner 1s 200ms infinite reverse;
+}
+.loader .spinner-bloc .spinner--3 {
+  border-top: 10px solid #99E2D0;
+  height: 33%;
+  width: 33%;
+  animation: spinner 1s 300ms infinite;
+}
+.loader .spinner-bloc .spinner--4 {
+  border: 10px solid black;
+  background-color: black;
+  height: 1%;
+  width: 1%;
+}
+.loader h4 {
+  font-size: 25px;
+  animation: loading-title 3s infinite;
 }
 
 .btn {

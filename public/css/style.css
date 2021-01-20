@@ -109,25 +109,26 @@ i {
   display: flex;
   font-size: 26px;
   font-weight: lighter;
+  cursor: pointer;
 }
-.heart__empty {
+.heart:hover .heart__full {
+  transform: scale(1.1);
+  opacity: 1;
+  transition: all 400ms;
+}
+.heart:hover .heart__full__empty {
   position: absolute;
   justify-self: flex-end;
   z-index: 0;
 }
 .heart__full {
+  position: absolute;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  cursor: pointer;
   z-index: 1;
   opacity: 0;
-  transform: scale(0.3);
-}
-.heart__full:hover, .heart__full:active {
-  transform: scale(1.1);
-  opacity: 1;
-  transition: all 300ms;
+  transform: scale(0.1);
 }
 
 .checkbox {

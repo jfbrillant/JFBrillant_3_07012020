@@ -35,23 +35,35 @@
             background-color: darken($color: $colour-white, $amount: 5%);
             margin: 20px 0 20px 0;
             animation: dish 800ms both;
-            &:hover .checkbox-container{
-                transform: translateX(0%);
+            &:hover .checkbox{
+                width: 7rem;
                 .fa-check-circle{
-                    transform: rotate(360deg)
+                    transform: rotate(360deg);
                 }
-            }
-            &:hover .menu-group-dish-content{
-                width: 200px;
             }
             &-content{
                 padding: 12px;
-                width: 500px;
-            }
-            &-bot{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+                display: grid;
+                grid-template-columns: auto auto;
+                width: 100%;
+                &-heading{
+                    grid-column: 1/2;
+                    grid-row: 1;
+                }
+                &-text{
+                    grid-column: 1/2;
+                    grid-row: 2;
+                }
+                &-price{
+                    grid-column: 2/2;
+                    grid-row: 2;
+                    text-align: right;
+                }
+                &-heading, &-text, &-price{
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                }
             }
             &--1 {
                 animation-delay: 300ms;
@@ -74,25 +86,10 @@
         & h3{
             font-size: 19px;
             margin: 0 0 6px 0;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
         }
         & p{
             font-size: 15px;
             margin: 0;
-        }
-        & .menu-group-dish-content{
-            & p{
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-            }
-        }
-        & .checkbox-container{
-            & p{
-                margin: 0 20px 10px 0;
-            }
         }
     }
 }

@@ -25,7 +25,7 @@
 body, header, main, footer {
   margin: 0;
   margin: auto;
-  max-width: 380px;
+  max-width: 480px;
 }
 
 h4 {
@@ -130,15 +130,6 @@ i {
   transition: all 300ms;
 }
 
-.checkbox-container {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 40%;
-  transform: translateX(40%);
-  transition: transform 400ms ease-in-out;
-}
-
 .checkbox {
   display: flex;
   justify-content: center;
@@ -146,13 +137,16 @@ i {
   background-color: #99E2D0;
   color: #fff;
   font-size: 30px;
-  width: 100%;
+  width: 0;
+  overflow: hidden;
   height: 72px;
+  transition: width 300ms ease-in-out;
 }
 
 .fa-check-circle {
-  transition: transform 400ms ease-in-out;
   font-size: 22px;
+  transform: rotate(0deg);
+  transition: transform 300ms ease-in-out;
 }
 
 header {
@@ -242,23 +236,35 @@ footer i {
   margin: 20px 0 20px 0;
   animation: dish 800ms both;
 }
-.menu-group-dish:hover .checkbox-container {
-  transform: translateX(0%);
+.menu-group-dish:hover .checkbox {
+  width: 7rem;
 }
-.menu-group-dish:hover .checkbox-container .fa-check-circle {
+.menu-group-dish:hover .checkbox .fa-check-circle {
   transform: rotate(360deg);
-}
-.menu-group-dish:hover .menu-group-dish-content {
-  width: 200px;
 }
 .menu-group-dish-content {
   padding: 12px;
-  width: 500px;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 100%;
 }
-.menu-group-dish-bot {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.menu-group-dish-content-heading {
+  grid-column: 1/2;
+  grid-row: 1;
+}
+.menu-group-dish-content-text {
+  grid-column: 1/2;
+  grid-row: 2;
+}
+.menu-group-dish-content-price {
+  grid-column: 2/2;
+  grid-row: 2;
+  text-align: right;
+}
+.menu-group-dish-content-heading, .menu-group-dish-content-text, .menu-group-dish-content-price {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .menu-group-dish--1 {
   animation-delay: 300ms;
@@ -280,21 +286,10 @@ footer i {
 .menu-group h3 {
   font-size: 19px;
   margin: 0 0 6px 0;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
 }
 .menu-group p {
   font-size: 15px;
   margin: 0;
-}
-.menu-group .menu-group-dish-content p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-}
-.menu-group .checkbox-container p {
-  margin: 0 20px 10px 0;
 }
 
 .location {

@@ -96,7 +96,9 @@
 
 @media all and (min-width: 1080px){
     .menu{
-        padding-bottom: 350px;
+        height: 780px;
+        justify-content: space-between;
+        padding-top: 50px;
         &-group-container{
             display: flex;
             flex-direction: row;
@@ -104,6 +106,9 @@
         }
         &-group{
             width: 350px;
+            &-dish{
+                margin: 30px 0 30px 0;
+            }
         }
     }
 }

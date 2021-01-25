@@ -407,7 +407,9 @@ footer i {
 
 @media all and (min-width: 1080px) {
   .menu {
-    padding-bottom: 350px;
+    height: 780px;
+    justify-content: space-between;
+    padding-top: 50px;
   }
   .menu-group-container {
     display: flex;
@@ -416,6 +418,9 @@ footer i {
   }
   .menu-group {
     width: 350px;
+  }
+  .menu-group-dish {
+    margin: 30px 0 30px 0;
   }
 }
 .location {

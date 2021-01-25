@@ -51,10 +51,22 @@
 }
 body, header, main, footer {
   margin: 0;
-  margin: auto;
-  max-width: 480px;
 }
 
+.wrap {
+  max-width: 1150px;
+  margin: auto;
+  box-shadow: 0 4px 10px #cccccc;
+}
+
+@media all and (min-width: 760px) {
+  .about_and_fonctionnement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+}
 h4 {
   font-family: "Shrikhand";
   font-size: 20px;
@@ -270,6 +282,23 @@ footer i {
   margin-right: 10px;
 }
 
+@media all and (min-width: 1020px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    max-width: 1150px;
+  }
+  footer .footer-content H4, footer .footer-contentp {
+    margin: 0;
+  }
+}
 .cover-picture {
   overflow: hidden;
   height: 300px;
@@ -376,6 +405,19 @@ footer i {
   margin: 0;
 }
 
+@media all and (min-width: 1080px) {
+  .menu {
+    padding-bottom: 350px;
+  }
+  .menu-group-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .menu-group {
+    width: 350px;
+  }
+}
 .location {
   display: flex;
   justify-content: center;
@@ -410,6 +452,25 @@ footer i {
   font-size: 16.8px;
 }
 
+@media all and (min-width: 760px) {
+  .about {
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    padding: 40px;
+  }
+  .about h1 {
+    margin: 0px;
+    font-size: 28px;
+  }
+  .about :nth-child(2) {
+    margin: 0px;
+    padding: 30px;
+  }
+  .about p {
+    font-size: 23px;
+  }
+}
 .fonctionnement {
   padding: 30px 0 30px 0;
   margin: 0 20px 0 20px;
@@ -455,6 +516,26 @@ footer i {
   color: #9356DC;
 }
 
+@media all and (min-width: 760px) {
+  .fonctionnement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0;
+    padding: 40px;
+    background-color: #f7f7f7;
+  }
+  .fonctionnement-bloc-content {
+    max-width: 490px;
+  }
+  .fonctionnement h2 {
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 28px;
+  }
+}
 .restaurants {
   background-color: #f2f2f2;
   padding: 50px 0 50px 0;
@@ -507,6 +588,45 @@ footer i {
 }
 .restaurants-bloc-content-label p {
   margin: 0;
+}
+
+@media all and (min-width: 760px) {
+  .restaurants {
+    background-color: #ededed;
+    padding: 40px 40px 80px 40px;
+  }
+  .restaurants h2 {
+    font-size: 28px;
+    text-align: center;
+  }
+  .restaurants-bloc {
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: auto;
+    max-width: 1100px;
+  }
+  .restaurants-bloc:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .restaurants-bloc:nth-child(2) {
+    grid-column: 2/2;
+    grid-row: 1/2;
+  }
+  .restaurants-bloc:nth-child(3) {
+    grid-column: 1/2;
+    grid-row: 2/2;
+  }
+  .restaurants-bloc:nth-child(4) {
+    grid-column: 2/2;
+    grid-row: 2/2;
+  }
+  .restaurants-bloc-content {
+    margin: 20px;
+  }
+  .restaurants-bloc-content-label {
+    margin-top: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

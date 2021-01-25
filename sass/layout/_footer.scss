@@ -17,3 +17,21 @@ footer{
         margin-right: 10px;
     }
 }
+
+@media all and (min-width: 1020px){
+    footer{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+        & .footer-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 70%;
+            max-width: 1150px;
+            & H4, &p{
+                margin: 0;
+            }
+        }
+    }
+}

@@ -44,3 +44,26 @@
         }
     } 
 }
+
+@media all and (min-width: 760px){
+    .fonctionnement{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        margin: 0;
+        padding: 40px;
+        background-color: darken($color: $colour-white, $amount: 3%);
+        &-bloc{
+            &-content{
+                max-width: 490px;
+            }
+        }
+        & h2{
+            margin-top: 0;
+            margin-left: 0;
+            font-size: 28px;
+        }
+    }
+}

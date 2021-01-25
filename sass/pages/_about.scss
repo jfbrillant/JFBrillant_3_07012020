@@ -14,3 +14,23 @@
         font-size: $heading-size*0.7;
     }
 }
+
+@media all and (min-width: 760px){
+    .about{
+        justify-content: space-between;
+        align-items: center;
+        width: 50%;
+        padding: 40px;
+        & h1{
+            margin: 0px;
+            font-size: 28px;
+        }
+        & :nth-child(2){
+            margin: 0px;
+            padding: 30px;
+        }
+        & p{
+            font-size: 23px;
+        }
+    }
+}

@@ -514,10 +514,10 @@ footer i {
   margin-left: 5px;
   color: grey;
 }
-.fonctionnement-bloc-content__highlight h3 {
+.fonctionnement-bloc-content:hover h3 {
   background-color: #f2eafb;
 }
-.fonctionnement-bloc-content__highlight h3 i {
+.fonctionnement-bloc-content:hover h3 i {
   color: #9356DC;
 }
 

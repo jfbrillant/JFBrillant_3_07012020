@@ -32,8 +32,8 @@
                     margin-left: 5px;
                     color: grey;
                 }
-            }
-            &__highlight{
+            }          
+            &:hover{
                 & h3{
                     background-color: lighten($color: $colour-primary, $amount: 35%);
                     & i{
